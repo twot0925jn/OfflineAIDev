@@ -15,14 +15,14 @@ client = chromadb.PersistentClient(path="/home/la-applications/AI_Resources/Chro
 collection = client.get_or_create_collection(name="docs")
 
 #store each document in a vector embedding database
-for i, d in enumerate(documents):
-  response = ollama.embed(model="minilm", input=d)
-  embeddings = response["embeddings"]
-  collection.add(
-    ids=[str(i)],
-    embeddings=embeddings,
-    documents=[d]
-  )
+# for i, d in enumerate(documents):
+#   response = ollama.embed(model="minilm", input=d)
+#   embeddings = response["embeddings"]
+#   collection.add(
+#     ids=[str(i)],
+#     embeddings=embeddings,
+#     documents=[d]
+#   )
 
 while True:
     # an example query
