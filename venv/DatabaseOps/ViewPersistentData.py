@@ -4,7 +4,7 @@ import chromadb
 client = chromadb.PersistentClient(path="~/AI_Resources/ChromaDB/PersistentClient/Data")
 
 #get collection
-collection =  client.get_collection(name="vehicles")
+collection =  client.get_collection(name="docs")
 
 #retrieve collection data
 data = collection.get()

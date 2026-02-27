@@ -4,11 +4,11 @@ import chromadb
 client = chromadb.PersistentClient(path="~/AI_Resources/ChromaDB/PersistentClient/Data")
 
 #get collection
-collection =  client.get_collection(name="vehicles")
+collection =  client.get_collection(name="docs")
 
 #query the collection
 results = collection.query(
-    query_texts=["What floats on water?"],
+    query_texts=[""],
     n_results=1
 )
 

@@ -4,18 +4,18 @@ import chromadb
 client = chromadb.PersistentClient(path="~/AI_Resources/ChromaDB/PersistentClient/Data")
 
 #get or create collection
-collection = client.get_or_create_collection(name="vehicles")
+collection = client.get_or_create_collection(name="docs")
 
 print ("Collection ready: ", collection)
 
 #add some documents to the collection
 collection.add(
-    documents=["Car runs on land", 
-               "Boat floats on water", 
-               "Plane flies in sky",
-               "Bus is public transport on road"
+    documents=["", 
+               "", 
+               "",
+               ""
                ],
-    ids=["car1", "boat2", "plane3", "bus1"],
+    ids=["", "", "", ""],
     
     )
 

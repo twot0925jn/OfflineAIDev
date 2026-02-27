@@ -4,11 +4,11 @@ import chromadb
 client = chromadb.PersistentClient(path="~/AI_Resources/ChromaDB/PersistentClient/Data")
 
 #get collection
-collection =  client.get_collection(name="vehicles")
+collection =  client.get_collection(name="docs")
 
 #delete one document by id
 
-collection.delete(ids=["boat1"])
+collection.delete(ids=[""])
 
 #retrieve stored data to verify deletion
 data=collection.get()
